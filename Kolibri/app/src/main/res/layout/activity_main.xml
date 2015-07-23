@@ -1,0 +1,22 @@
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.main.kolibri.MainActivity">
+
+    <fragment
+        android:id="@+id/fragment_map"
+        android:name="app.main.kolibri.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="450dp" />
+
+    <fragment
+        android:layout_weight="1"
+        android:id="@+id/list"
+        android:name="app.main.kolibri.AddressItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
